@@ -78,6 +78,21 @@ namespace palindroms_chapter1
             sfd.Filter = "Text files (*.txt)|*.txt";
             sfd.FileName = "Palindroms";
             sfd.RestoreDirectory = true;
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter sw = new StreamWriter(sfd.FileName);
+                string s = null;
+                for (int i = 0; i < lstRes.Items.Count; i++)
+                {
+                    s = (string)lstRes.Items[i];
+                    sw.WriteLine(s);
+                }
+                sw.Close();
+                sw = null;
+
+                MessageBox.Show("file " + sfd.FileName + " saved!");
+            }
         }
     }
 }
