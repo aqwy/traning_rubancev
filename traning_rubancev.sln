@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "traning_rubancev", "traning
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palindroms_chapter1", "palindroms_chapter1\palindroms_chapter1.csproj", "{3CDC4F8B-F8FE-4666-A227-3C00EC55857A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lepet_chapter1", "lepet_chapter1\lepet_chapter1.csproj", "{19CA6E9F-A04F-45C7-B97B-3B16492F7B32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3CDC4F8B-F8FE-4666-A227-3C00EC55857A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CDC4F8B-F8FE-4666-A227-3C00EC55857A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CDC4F8B-F8FE-4666-A227-3C00EC55857A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CA6E9F-A04F-45C7-B97B-3B16492F7B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CA6E9F-A04F-45C7-B97B-3B16492F7B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CA6E9F-A04F-45C7-B97B-3B16492F7B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CA6E9F-A04F-45C7-B97B-3B16492F7B32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

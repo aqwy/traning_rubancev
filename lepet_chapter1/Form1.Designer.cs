@@ -35,8 +35,6 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSaveRes = new System.Windows.Forms.Button();
             this.btnDictLoad = new System.Windows.Forms.Button();
-            this.btmLepet = new System.Windows.Forms.Button();
-            this.btmCklPol = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstRes
@@ -46,13 +44,12 @@
             this.lstRes.ItemHeight = 16;
             this.lstRes.Location = new System.Drawing.Point(-2, 79);
             this.lstRes.Name = "lstRes";
-            this.lstRes.Size = new System.Drawing.Size(516, 356);
+            this.lstRes.Size = new System.Drawing.Size(310, 356);
             this.lstRes.TabIndex = 0;
-            this.lstRes.SelectedIndexChanged += new System.EventHandler(this.lstRes_SelectedIndexChanged);
             // 
             // btnClose
             // 
-            this.btnClose.BackgroundImage = global::palindroms_chapter1.Properties.Resources.error1;
+            
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Location = new System.Drawing.Point(236, 3);
@@ -67,7 +64,7 @@
             // 
             this.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Image = global::palindroms_chapter1.Properties.Resources.document1;
+            
             this.btnClear.Location = new System.Drawing.Point(158, 3);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(72, 72);
@@ -80,7 +77,7 @@
             // 
             this.btnSaveRes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSaveRes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveRes.Image = global::palindroms_chapter1.Properties.Resources.folder_txt1;
+            
             this.btnSaveRes.Location = new System.Drawing.Point(80, 3);
             this.btnSaveRes.Name = "btnSaveRes";
             this.btnSaveRes.Size = new System.Drawing.Size(72, 72);
@@ -91,7 +88,7 @@
             // 
             // btnDictLoad
             // 
-            this.btnDictLoad.BackgroundImage = global::palindroms_chapter1.Properties.Resources.folder_font2;
+            
             this.btnDictLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnDictLoad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDictLoad.Location = new System.Drawing.Point(2, 3);
@@ -102,33 +99,11 @@
             this.btnDictLoad.UseVisualStyleBackColor = true;
             this.btnDictLoad.Click += new System.EventHandler(this.btnDictLoad_Click);
             // 
-            // btmLepet
-            // 
-            this.btmLepet.Location = new System.Drawing.Point(314, 3);
-            this.btmLepet.Name = "btmLepet";
-            this.btmLepet.Size = new System.Drawing.Size(75, 70);
-            this.btmLepet.TabIndex = 5;
-            this.btmLepet.Text = "LEPET";
-            this.btmLepet.UseVisualStyleBackColor = true;
-            this.btmLepet.Click += new System.EventHandler(this.btmLepet_Click);
-            // 
-            // btmCklPol
-            // 
-            this.btmCklPol.Location = new System.Drawing.Point(406, 3);
-            this.btmCklPol.Name = "btmCklPol";
-            this.btmCklPol.Size = new System.Drawing.Size(75, 70);
-            this.btmCklPol.TabIndex = 6;
-            this.btmCklPol.Text = "ciclPlindroms";
-            this.btmCklPol.UseVisualStyleBackColor = true;
-            this.btmCklPol.Click += new System.EventHandler(this.btmCklPol_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 443);
-            this.Controls.Add(this.btmCklPol);
-            this.Controls.Add(this.btmLepet);
+            this.ClientSize = new System.Drawing.Size(308, 448);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSaveRes);
@@ -150,8 +125,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button btmLepet;
-        private System.Windows.Forms.Button btmCklPol;
     }
 }
 
