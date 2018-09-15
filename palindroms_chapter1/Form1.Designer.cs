@@ -37,6 +37,9 @@
             this.btnDictLoad = new System.Windows.Forms.Button();
             this.btmLepet = new System.Windows.Forms.Button();
             this.btmCklPol = new System.Windows.Forms.Button();
+            this.btnTranslite = new System.Windows.Forms.Button();
+            this.btnLatin = new System.Windows.Forms.Button();
+            this.lstBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lstRes
@@ -46,7 +49,7 @@
             this.lstRes.ItemHeight = 16;
             this.lstRes.Location = new System.Drawing.Point(-2, 79);
             this.lstRes.Name = "lstRes";
-            this.lstRes.Size = new System.Drawing.Size(516, 356);
+            this.lstRes.Size = new System.Drawing.Size(232, 356);
             this.lstRes.TabIndex = 0;
             this.lstRes.SelectedIndexChanged += new System.EventHandler(this.lstRes_SelectedIndexChanged);
             // 
@@ -122,11 +125,44 @@
             this.btmCklPol.UseVisualStyleBackColor = true;
             this.btmCklPol.Click += new System.EventHandler(this.btmCklPol_Click);
             // 
+            // btnTranslite
+            // 
+            this.btnTranslite.Location = new System.Drawing.Point(502, 7);
+            this.btnTranslite.Name = "btnTranslite";
+            this.btnTranslite.Size = new System.Drawing.Size(89, 66);
+            this.btnTranslite.TabIndex = 7;
+            this.btnTranslite.Text = "translete";
+            this.btnTranslite.UseVisualStyleBackColor = true;
+            this.btnTranslite.Click += new System.EventHandler(this.btnTranslite_Click);
+            // 
+            // btnLatin
+            // 
+            this.btnLatin.Location = new System.Drawing.Point(502, 92);
+            this.btnLatin.Name = "btnLatin";
+            this.btnLatin.Size = new System.Drawing.Size(89, 44);
+            this.btnLatin.TabIndex = 8;
+            this.btnLatin.Text = "rusko-latin";
+            this.btnLatin.UseVisualStyleBackColor = true;
+            this.btnLatin.Click += new System.EventHandler(this.btnLatin_Click);
+            // 
+            // lstBox
+            // 
+            this.lstBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lstBox.FormattingEnabled = true;
+            this.lstBox.ItemHeight = 16;
+            this.lstBox.Location = new System.Drawing.Point(236, 81);
+            this.lstBox.Name = "lstBox";
+            this.lstBox.Size = new System.Drawing.Size(259, 356);
+            this.lstBox.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 443);
+            this.ClientSize = new System.Drawing.Size(603, 439);
+            this.Controls.Add(this.lstBox);
+            this.Controls.Add(this.btnLatin);
+            this.Controls.Add(this.btnTranslite);
             this.Controls.Add(this.btmCklPol);
             this.Controls.Add(this.btmLepet);
             this.Controls.Add(this.btnClose);
@@ -152,6 +188,9 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button btmLepet;
         private System.Windows.Forms.Button btmCklPol;
+        private System.Windows.Forms.Button btnTranslite;
+        private System.Windows.Forms.Button btnLatin;
+        private System.Windows.Forms.ListBox lstBox;
     }
 }
 

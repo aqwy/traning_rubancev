@@ -65,17 +65,17 @@ namespace palindroms_chapter1
                 bool flag = true;
                 if (len < 3)
                     continue;
-                for (int i = 0; i < len/2; i++)
+                for (int i = 0; i < len / 2; i++)
                 {
                     char ch1 = words[i + 1];
                     char ch2 = words[len - (i + 1)];
-                    if(ch1!=ch2)
+                    if (ch1 != ch2)
                     {
-                        for (int j = 0; j < len/2; j++)
+                        for (int j = 0; j < len / 2; j++)
                         {
                             ch1 = words[j];
                             ch2 = words[len - (j + 2)];
-                            if(ch1!=ch2)
+                            if (ch1 != ch2)
                             {
                                 flag = false;
                                 break;
@@ -175,12 +175,16 @@ namespace palindroms_chapter1
                 string s = null;
                 while ((s = r.ReadLine()) != null)
                 {
-                    dict.Add(s);
+                    dict.Add(s);                  
                 }
                 r.Close();
                 r = null;
             }
-            serchPalindroms();
+            foreach(string words in dict)
+            {
+                lstRes.Items.Add(words);
+            }
+            /*serchPalindroms();*/
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -257,7 +261,57 @@ namespace palindroms_chapter1
                 r.Close();
                 r = null;
             }
-            serchCPal();
+            /*serchCPal();*/
+        }
+
+        private void btnTranslite_Click(object sender, EventArgs e)
+        {
+            string russLetters = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+            string[] transLetters = {"A", "B", "V", "G", "D", "E", "YO", "ZH", "Z",
+                "I", "Y", "K", "L", "M", "N", "O", "P", "R","S", "T", "U", "F", "KH",
+                "TS", "CH","SH", "SHCH", "'", "Y", "J", "E", "YU", "YA"};
+            if (dict == null)
+                return;
+            lstBox.Items.Clear();
+
+            foreach(string words in dict)
+            {
+                string s = "";
+                foreach(char ch in words)
+                {
+                    int n = russLetters.IndexOf(ch);
+                    if (n > -1)
+                        s += transLetters[n];
+                }
+                lstBox.Items.Add(s);
+            }
+            lstBox.Items.Add("");
+            lstBox.TopIndex = lstBox.Items.Count - 27;
+        }
+
+        private void btnLatin_Click(object sender, EventArgs e)
+        {
+            string rusLatin = "АВСЕНКМОРТХ";
+            if (dict == null)
+                return;
+            lstRes.Items.Clear();
+            foreach(string words in dict)
+            {
+                bool flag = true;
+                foreach(char ch in words)
+                {
+                    int n = rusLatin.IndexOf(ch);
+                    if(n==-1)
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag)
+                    lstRes.Items.Add(words);
+            }
+            lstRes.Items.Add("");
+            lstRes.TopIndex = lstRes.Items.Count - 27;
         }
     }
 }
