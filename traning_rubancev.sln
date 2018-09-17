@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lepet_chapter1", "lepet_cha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logoped_chapter5", "logoped_chapter5\logoped_chapter5.csproj", "{C35502D8-1A40-4508-86CC-D417B877667B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "litoreya_chapter8", "litoreya_chapter8\litoreya_chapter8.csproj", "{A04BF180-5CD9-4B1A-A9AF-3B8CBE08ED74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eratosfen_chapter14", "eratosfen_chapter14\eratosfen_chapter14.csproj", "{CE2B743B-F76A-4DB3-B5C6-7801C2E608E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{C35502D8-1A40-4508-86CC-D417B877667B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C35502D8-1A40-4508-86CC-D417B877667B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C35502D8-1A40-4508-86CC-D417B877667B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A04BF180-5CD9-4B1A-A9AF-3B8CBE08ED74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A04BF180-5CD9-4B1A-A9AF-3B8CBE08ED74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A04BF180-5CD9-4B1A-A9AF-3B8CBE08ED74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A04BF180-5CD9-4B1A-A9AF-3B8CBE08ED74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE2B743B-F76A-4DB3-B5C6-7801C2E608E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2B743B-F76A-4DB3-B5C6-7801C2E608E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE2B743B-F76A-4DB3-B5C6-7801C2E608E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE2B743B-F76A-4DB3-B5C6-7801C2E608E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
